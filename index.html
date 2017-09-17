@@ -3,11 +3,18 @@
 	<head>
 		<title>karuzela</title>
 		<meta charset="UTF-8">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<meta http-equiv="refresh" content="x">
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<div id="carousel">
-			<ul>
+		<div class ="arrows">
+				<i class="fa fa-arrow-left prev" aria-hidden="true"></i>
+				<i class="fa fa-arrow-right next" aria-hidden="true"></i>
+			</div>
+
+			<ul class= "slider-unit">
 				<li><img src="images/forest.jpeg" alt=""></li>
 				<li><img src="images/lake.jpeg" alt=""></li>
 				<li><img src="images/road.jpeg" alt=""></li>
@@ -15,8 +22,10 @@
 				<li><img src="images/mountain.jpeg" alt=""></li>
 			</ul>
 		</div>
-        <button class="prev">prev</button>
-        <button class="next">next</button>
+		<div class = "navigation">
+	        <button class="prev">prev</button>
+	        <button class="next">next</button>
+        </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>

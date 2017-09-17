@@ -7,6 +7,7 @@ $(function(){
 	$('.next').on('click', function(){
 		window.clearInterval(autoPlay);
 		changeImageNext();
+		
 	});
 	$('.prev').on('click', function(){
 		window.clearInterval(autoPlay);
@@ -21,9 +22,9 @@ $(function(){
 		carouselList.animate({'marginLeft':0}, 300);
 	}
 
-			lastItem.after(firstItem);
-			carouselList.css({marginLeft:0});
-		}
+	lastItem.after(firstItem);
+	carouselList.css({marginLeft:0});
+
 
 	function moveFirstSlide() {
 		var firstItem = carouselList.find("li:first");
@@ -31,6 +32,7 @@ $(function(){
 
 		lastItem.after(firstItem);
 		carouselList.css({marginLeft:0});
+
 	}
 	function moveLastSlide() {
 		var firstItem = carouselList.find("li:first");
@@ -39,5 +41,5 @@ $(function(){
 		firstItem.before(lastItem);
 		carouselList.css({marginLeft:-300});
 	}
-
 });
+   
