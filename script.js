@@ -22,10 +22,6 @@ $(function(){
 		carouselList.animate({'marginLeft':0}, 300);
 	}
 
-	lastItem.after(firstItem);
-	carouselList.css({marginLeft:0});
-
-
 	function moveFirstSlide() {
 		var firstItem = carouselList.find("li:first");
 		var lastItem = carouselList.find("li:last");

@@ -47,5 +47,5 @@ body {
 }
 .arrows i:last-child {
 	margin-left: 270px;
-	position-absolute;
+	position: absolute;
 }
